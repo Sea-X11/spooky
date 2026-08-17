@@ -15,9 +15,9 @@
   --color-parchment: #f4e4bc;
   --color-blood: #7f1d1d;
 
-  --font-sans: var(--font-inter);
-  --font-spooky: var(--font-creepster);
-  --font-typewriter: var(--font-special-elite);
+  --font-sans: var(--font-inter), var(--font-noto-serif-sc);
+  --font-spooky: var(--font-creepster), var(--font-ma-shan-zheng);
+  --font-typewriter: var(--font-special-elite), var(--font-noto-serif-sc);
 
   --radius: 0.5rem;
 }
@@ -39,10 +39,10 @@ body {
 
 /* Typography helpers preserved from the original theme */
 .font-spooky {
-  font-family: var(--font-spooky), system-ui, sans-serif;
+  font-family: var(--font-creepster), var(--font-ma-shan-zheng), system-ui, sans-serif;
 }
 .font-typewriter {
-  font-family: var(--font-typewriter), monospace;
+  font-family: var(--font-special-elite), var(--font-noto-serif-sc), monospace;
 }
 .text-glow-pumpkin {
   text-shadow: 0 0 10px rgba(255, 117, 24, 0.5), 0 0 20px rgba(255, 117, 24, 0.3);
