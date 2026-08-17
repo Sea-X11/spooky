@@ -46,10 +46,10 @@ const notoSerifSC = Noto_Serif_SC({
 })
 
 export const metadata: Metadata = {
-  title: "夜行者的暗室 · 摄影与诗",
+  title: "小影的暗室 · 摄影与诗",
   description:
-    "一座常年薄雾笼罩的旧宅：收藏着 rust lake 湖畔的摄影作品，以及深夜写下的哥特诗篇。",
-  keywords: ["摄影", "诗歌", "哥特", "万圣节", "rust lake", "暗黑艺术"],
+    "推开这扇门，走进薄雾里的旧宅。墙上是锈湖的照片，抽屉里锁着夜里的诗。",
+  keywords: ["唐泽影", "小影的暗室", "摄影", "诗歌", "暗房", "阁楼手记"],
 }
 
 export const viewport: Viewport = {

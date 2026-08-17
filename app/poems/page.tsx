@@ -4,8 +4,8 @@ import { PageHeader } from "@/components/page-header"
 import { poems } from "@/lib/poems"
 
 export const metadata: Metadata = {
-  title: "阁楼手记 · 诗",
-  description: "深夜写下的哥特诗篇，锁在旧宅阁楼的抽屉里。",
+  title: "阁楼手记 · Poems",
+  description: "唐泽影的个人诗集。",
 }
 
 export default function PoemsPage() {
@@ -14,7 +14,7 @@ export default function PoemsPage() {
       <PageHeader
         subtitle="Poems"
         title="阁楼手记"
-        intro="这些句子不敢在白天说出口，只好锁进阁楼的抽屉。夜深了，抽屉自己开了。"
+        intro="夜里的诗。"
       />
 
       <section className="mx-auto max-w-3xl px-5 py-14">
@@ -29,9 +29,11 @@ export default function PoemsPage() {
                   <Feather className="h-5 w-5 text-pumpkin" />
                   {poem.title}
                 </h2>
-                <span className="shrink-0 font-typewriter text-xs text-muted">
-                  {poem.date}
-                </span>
+                {poem.date && (
+                  <span className="shrink-0 font-typewriter text-xs text-muted">
+                    {poem.date}
+                  </span>
+                )}
               </div>
               <div className="font-typewriter text-[15px] leading-loose text-parchment/85">
                 {poem.lines.map((line, i) =>

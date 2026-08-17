@@ -7,11 +7,8 @@ import { Menu, X, Moon } from "lucide-react"
 import { JumpScareToggle } from "./jump-scare-toggle"
 
 const links = [
-  { href: "/", label: "门廊", en: "The Porch" },
   { href: "/gallery", label: "暗房", en: "Gallery" },
   { href: "/poems", label: "阁楼手记", en: "Poems" },
-  { href: "/about", label: "宅中人", en: "About" },
-  { href: "/contact", label: "留一张便条", en: "Contact" },
 ]
 
 export function Navigation() {
@@ -28,7 +25,7 @@ export function Navigation() {
         >
           <Moon className="h-5 w-5 text-pumpkin transition-transform group-hover:rotate-12" />
           <span className="font-spooky text-2xl tracking-wide text-foreground group-hover:text-glow-pumpkin">
-            夜行者的暗室
+            小影的暗室
           </span>
         </Link>
 

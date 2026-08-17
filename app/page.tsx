@@ -21,8 +21,8 @@ export default function HomePage() {
         {/* Background photograph */}
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/photos/hero-lake.png"
-            alt="薄雾笼罩的锈色湖面，枯树与孤独的木栈道没入雾中"
+            src="/ying_photo/darkroom-01.jpg"
+            alt="唐泽影个人摄影作品，薄雾里的暗房入口"
             fill
             priority
             className="object-cover opacity-40"
@@ -41,7 +41,7 @@ export default function HomePage() {
           transition={{ duration: 0.8 }}
           className="font-spooky text-5xl leading-tight text-foreground text-glow-pumpkin sm:text-6xl md:text-7xl"
         >
-          欢迎来到夜行者的暗室
+          小影的暗室
         </motion.h1>
 
         <motion.p
@@ -50,8 +50,7 @@ export default function HomePage() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-6 max-w-xl text-pretty font-typewriter text-base leading-relaxed text-parchment/80 sm:text-lg"
         >
-          推开这扇门，你会走进一座常年薄雾的旧宅。墙上挂着我在 rust
-          lake 湖畔拍下的照片，抽屉里塞满深夜写下的诗。请慢慢看，别惊动了住在这里的东西。
+          推开这扇门，走进薄雾里的旧宅。墙上是锈湖的照片，抽屉里锁着夜里的诗。请慢慢看。
         </motion.p>
 
         <motion.div
@@ -65,7 +64,7 @@ export default function HomePage() {
             className="group inline-flex items-center gap-2 rounded-full bg-pumpkin px-6 py-3 font-typewriter text-sm text-background transition-transform hover:scale-105"
           >
             <Camera className="h-4 w-4" />
-            走进暗房看照片
+            暗房 · Gallery
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Link>
           <Link
@@ -73,7 +72,7 @@ export default function HomePage() {
             className="inline-flex items-center gap-2 rounded-full border border-witch px-6 py-3 font-typewriter text-sm text-parchment transition-colors hover:bg-witch/20"
           >
             <Feather className="h-4 w-4" />
-            读一首阁楼里的诗
+            阁楼手记 · Poems
           </Link>
         </motion.div>
 
@@ -96,20 +95,20 @@ export default function HomePage() {
         <div className="grid gap-6 md:grid-cols-2">
           <RoomCard
             href="/gallery"
-            img="/photos/photo-1.png"
-            alt="夜色中的破败维多利亚宅邸，一扇窗透出暖橙烛光"
+            img="/ying_photo/darkroom-02.jpg"
+            alt="唐泽影个人摄影作品，锈湖的照片"
             title="暗房"
             subtitle="Gallery"
-            desc="锈湖、墓园、雾中的旧宅——我用胶片留下的每一帧夜晚。"
+            desc="锈湖的照片。"
             icon={<Camera className="h-5 w-5" />}
           />
           <RoomCard
             href="/poems"
-            img="/photos/photo-3.png"
-            alt="古旧木桌上融化的蜡烛与干枯玫瑰"
+            img="/ying_photo/darkroom-03.jpg"
+            alt="唐泽影个人摄影作品，阁楼手记的入口"
             title="阁楼手记"
             subtitle="Poems"
-            desc="那些不敢在白天说出口的句子，都锁在阁楼的抽屉里。"
+            desc="夜里的诗。"
             icon={<Feather className="h-5 w-5" />}
           />
         </div>
@@ -160,8 +159,8 @@ function RoomCard({
         <p className="mt-3 font-typewriter text-sm leading-relaxed text-parchment/70">
           {desc}
         </p>
-        <span className="mt-4 inline-flex items-center gap-1 font-typewriter text-xs text-pumpkin">
-          进入
+        <span className="mt-4 inline-flex items-center gap-1 rounded-full bg-pumpkin/10 px-3 py-1 font-typewriter text-xs text-pumpkin">
+          打开
           <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1" />
         </span>
       </div>
