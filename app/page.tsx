@@ -41,7 +41,7 @@ export default function HomePage() {
           transition={{ duration: 0.8 }}
           className="font-spooky text-5xl leading-tight text-foreground text-glow-pumpkin sm:text-6xl md:text-7xl"
         >
-          小影的暗室
+          推开这扇门
         </motion.h1>
 
         <motion.p

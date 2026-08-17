@@ -7,6 +7,7 @@ import { Menu, X, Moon } from "lucide-react"
 import { JumpScareToggle } from "./jump-scare-toggle"
 
 const links = [
+  { href: "/", label: "首页", en: "Home" },
   { href: "/gallery", label: "暗房", en: "Gallery" },
   { href: "/poems", label: "阁楼手记", en: "Poems" },
 ]

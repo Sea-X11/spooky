@@ -20,7 +20,7 @@ export default function AboutPage() {
       <PageHeader
         subtitle="About"
         title="唐泽影"
-        intro="小影的暗室里，放着照片和诗。"
+        intro="这里放着照片和诗。"
       />
 
       <section className="mx-auto grid max-w-5xl gap-10 px-5 py-16 md:grid-cols-[2fr_3fr] md:items-start">
