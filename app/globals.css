@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Core palette (preserved from the original haunted build) */
+  --color-background: #0b0b0e;
+  --color-foreground: #f5f5f5;
+  --color-card: #16151a;
+  --color-card-elevated: #1a1a1d;
+  --color-muted: #9ca3af;
+  --color-border: #262230;
+
+  --color-pumpkin: #ff7518;
+  --color-witch: #4a1a5c;
+  --color-candle: #fcd34d;
+  --color-parchment: #f4e4bc;
+  --color-blood: #7f1d1d;
+
+  --font-sans: var(--font-inter);
+  --font-spooky: var(--font-creepster);
+  --font-typewriter: var(--font-special-elite);
+
+  --radius: 0.5rem;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background-color: var(--color-background);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Typography helpers preserved from the original theme */
+.font-spooky {
+  font-family: var(--font-spooky), system-ui, sans-serif;
+}
+.font-typewriter {
+  font-family: var(--font-typewriter), monospace;
+}
+.text-glow-pumpkin {
+  text-shadow: 0 0 10px rgba(255, 117, 24, 0.5), 0 0 20px rgba(255, 117, 24, 0.3);
+}
+.text-glow-candle {
+  text-shadow: 0 0 10px rgba(252, 211, 77, 0.5), 0 0 22px rgba(252, 211, 77, 0.25);
+}
+
+/* Faint fog vignette over the whole page */
+.fog-vignette::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(74, 26, 92, 0.18),
+    transparent 55%
+  );
+}
+
+/* Animations preserved from the original build */
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  10%,
+  90% {
+    opacity: 0.7;
+  }
+}
+.animate-flicker {
+  animation: flicker 3s infinite alternate;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar to keep the mood */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0b0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #4a1a5c;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7518;
+}
+
+::selection {
+  background: rgba(255, 117, 24, 0.3);
+  color: #f5f5f5;
+}
