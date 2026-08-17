@@ -35,28 +35,19 @@ export default function HomePage() {
           <SwingingLantern delay={1.2} />
         </div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="font-spooky text-5xl leading-tight text-foreground text-glow-pumpkin sm:text-6xl md:text-7xl"
-        >
-          推开这扇门
-        </motion.h1>
-
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-6 max-w-xl text-pretty font-typewriter text-base leading-relaxed text-parchment/80 sm:text-lg"
+          transition={{ duration: 0.8 }}
+          className="max-w-xl whitespace-pre-line text-pretty font-typewriter text-base leading-loose text-parchment/85 sm:text-lg"
         >
-          推开这扇门，走进薄雾里的旧宅。墙上是锈湖的照片，抽屉里锁着夜里的诗。请慢慢看。
+          {"推开这扇门，走进薄雾里的旧宅。\n墙上是锈湖的照片，抽屉里锁着夜里的诗。\n请慢慢看。"}
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-10 flex flex-col items-center gap-4 sm:flex-row"
         >
           <Link
