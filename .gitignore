@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.pnpm-store/
+pnpm-lock.yaml
+pnpm-workspace.yaml
+tsconfig.tsbuildinfo
+next-env.d.ts
+.DS_Store
+public/.DS_Store

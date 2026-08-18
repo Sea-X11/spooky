@@ -7,6 +7,7 @@ import { CandleCursor } from "./candle-cursor"
 import { JumpScareProvider } from "./jump-scare-context"
 import { JumpScareSpider } from "./jump-scare-spider"
 import { Footer } from "./footer"
+import { StartScreen } from "./start-screen"
 
 /**
  * Global chrome shared by every page: ambient effects, nav, footer,
@@ -16,6 +17,7 @@ import { Footer } from "./footer"
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <JumpScareProvider>
+      <StartScreen />
       <FlickeringLights />
       <CandleCursor />
       <JumpScareSpider />
